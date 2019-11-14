@@ -1,18 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div style="width: 80%; margin-left: auto; margin-right:auto;">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'app',
+  /*name: 'app',
   components: {
-    HelloWorld
-  }
+    GoalViewList,
+    Icon
+  },
+  data: () => {
+    return {
+      goals: {
+        type: 'Mining',
+        title: '87 Mining',
+        subgoals: [{
+          type: 'Prayer',
+          title: '69 Prayer',
+          subgoals: [{
+            type: 'Defence', title: '69 Defence'
+          }]
+        }]
+      }
+    }
+  }*/
 }
 </script>
 
@@ -21,8 +36,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 </style>
